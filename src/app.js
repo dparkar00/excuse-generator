@@ -17,24 +17,24 @@ window.onload = function() {
     "while I was praying"
   ];
 
-  // Define what a sentence looks like
+  
   let sentence =
-    who[rand(who.length)] + // each array's index will be a random number from
+    who[rand(who.length)] + 
     " " +
     action[rand(action.length)] +
     " " +
     what[rand(what.length)] +
     " " +
     when[rand(when.length)];
-  // Query the span by ID
+ 
   let excuseSpan = document.querySelector("#excuse");
 
-  // Set the span's innerHTML to the sentance
+
   excuseSpan.innerHTML = sentence;
 };
 
 function rand(length) {
-  // Given the length, randomize a number between 0 and the length of the array.
+  
   let number = Math.floor(Math.random() * length);
   return number;
 }
